@@ -125,11 +125,13 @@ function renderSocials() {
   const socialRow = document.getElementById("social-row");
   if (!socials.length) {
     socialRow.hidden = true;
+    socialRow.style.removeProperty("--social-count");
     socialRow.replaceChildren();
     return;
   }
 
   socialRow.hidden = false;
+  socialRow.style.setProperty("--social-count", String(socials.length));
   socialRow.replaceChildren(...socials.map(createSocialLink));
 }
 
