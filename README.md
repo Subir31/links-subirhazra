@@ -2,6 +2,10 @@
 
 Mobile-first personal links site for Subir Hazra, built as a lightweight GitHub Pages project.
 
+## Live Site
+
+https://links.subirhazra.com/
+
 This repository powers a simple public profile page that highlights:
 
 - personal website
@@ -78,6 +82,14 @@ This project is ready to deploy as a static GitHub Pages site.
 6. Save the settings.
 
 GitHub Pages will publish the site without any additional build configuration.
+
+## Custom Domain
+
+This site is configured to use the custom subdomain:
+
+`links.subirhazra.com`
+
+The repository includes a `CNAME` file so the domain configuration stays in version control.
 
 ## Notes
 
