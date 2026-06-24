@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, max-age=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta
+      name="description"
+      content="A mobile-first landing page for your profile links."
+    />
+    <title>Links Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=8" />
+    <script>
+      async function loadPageScript(src) {
+        await new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = src;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+
+      window.addEventListener("DOMContentLoaded", async () => {
+        const version = Date.now();
+
+        try {
+          await loadPageScript(`config.js?v=${version}`);
+          await loadPageScript(`app.js?v=${version}`);
+        } catch (error) {
+          console.error("Failed to load page scripts.", error);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="profile" aria-labelledby="profile-name">
+        <div class="hero-accent" aria-hidden="true"></div>
+        <div class="avatar-frame">
+          <div class="avatar" id="profile-avatar"></div>
+        </div>
+        <h1 id="profile-name">Your Name</h1>
+        <p id="profile-tagline">Artist / Creator / Developer</p>
+      </section>
+
+      <section class="link-stack" id="link-stack" aria-label="Primary links"></section>
+
+      <nav class="social-row" id="social-row" aria-label="Social links"></nav>
+    </main>
+  </body>
+</html>
