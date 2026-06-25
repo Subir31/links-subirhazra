@@ -25,11 +25,15 @@ window.profileConfig = {
       title: "Side Projects",
       links: [
         {
+          label: "Orbit Daily AI",
+          url: "https://www.orbitdailyai.com/"
+        },
+        {
           label: "Explodus",
           url: "https://explodus.subirhazra.com"
         },
         {
-          label: "WatchifyOne",
+          label: "Watchify One",
           url: "https://watchifyone.subirhazra.com"
         },
         {
