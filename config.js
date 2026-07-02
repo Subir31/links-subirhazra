@@ -50,6 +50,10 @@ window.profileConfig = {
           url: "https://hazraxtoolbox.com/"
         },
         {
+          label: "Insta Followers",
+          url: "https://instafollowers.subirhazra.com"
+        },
+        {
           label: "MWorkerPro",
           url: "https://mworkerpro.subirhazra.com"
         }
