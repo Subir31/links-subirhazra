@@ -50,6 +50,10 @@ window.profileConfig = {
           url: "https://hazraxtoolbox.com/"
         },
         {
+          label: "Pixqo",
+          url: "https://www.pixqo.in/"
+        },
+        {
           label: "Insta Followers",
           url: "https://instafollowers.subirhazra.com"
         },
