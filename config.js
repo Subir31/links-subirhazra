@@ -25,6 +25,10 @@ window.profileConfig = {
       title: "Side Projects",
       links: [
         {
+          label: "KaliQ",
+          url: "https://kaliq.subirhazra.com"
+        },
+        {
           label: "Orbit Daily AI",
           url: "https://www.orbitdailyai.com/"
         },
@@ -46,8 +50,8 @@ window.profileConfig = {
       title: "Services",
       links: [
         {
-          label: "Hazrax Toolbox",
-          url: "https://hazraxtoolbox.com/"
+          label: "HappyConverter",
+          url: "https://happyconverter.com/"
         },
         {
           label: "Pixqo",
